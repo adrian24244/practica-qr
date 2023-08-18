@@ -1,0 +1,124 @@
+:root {
+    --fuentePrincipal: 'Outfit', sans-serif;
+
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+
+}
+
+hmtl {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*before,
+*after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--Light-gray);
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1;
+    /*INTERLINEADO*/
+}
+
+*GLOBALES*/ a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5%;
+}
+
+/*UTILIDADES*/
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.centrar-texto {
+    text-align: justify;
+}
+
+
+/*CONTENEDOR PRINCIPAL  MOVIL*/
+
+.contenedor-qr {
+    width: min(70%, 120rem);
+    /*HACE LO MISMO QUE LAS DOS LINEAS DE ARRIBA SIMPLIFICA CODIGO*/
+    margin: 10rem auto;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: var(--White);
+    border-radius: 5.5%;
+}
+
+.contenedor-qr p {
+    font-size: 1rem;
+    color: var(--Grayish-blue);
+    line-height: 1.2rem;
+}
+
+
+
+
+/*DESTOK*/
+@media(min-width:768px) {
+    .contenedor-qr {
+        width: min(35%, 120rem);
+    }
+
+}
+
+/*FOOTER*/
+
+.attribution {
+    display: flex;
+    justify-content: center;
+    /*ALINEAR VERTICAL*/
+    align-items: center;
+    /*ALINEAR HORIZONTAL*/
+    width: min(100%, 120rem);
+    height: 4rem;
+    font-size: 14px;
+    text-align: center;
+    color: var(--Dark-blue);
+}
+
+
+.attribution a {
+    color: var(--Dark-blue)
+}
